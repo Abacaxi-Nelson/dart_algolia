@@ -934,7 +934,7 @@ class AlgoliaQuery {
   ///
   /// Source: [Learn more](https://www.algolia.com/doc/api-reference/api-parameters/hitsPerPage/)
   ///
-  AlgoliaQuery setHitsPerPage(int value) {
+  AlgoliaQuery setHitsPerPage(String value) {
     assert(!_parameters.containsKey('hitsPerPage'));
     return _copyWithParameters(<String, dynamic>{'hitsPerPage': value});
   }
